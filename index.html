@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T&D Auto Care</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin:0; 
+      padding:0; 
+      line-height:1.6; 
+      background:#ffffff; /* 整体背景白色 */
+      color:#333;
+    }
+
+    header { 
+      background:#006400; /* 深绿色主色 */
+      color:#fff; 
+      padding:15px; 
+      text-align:center; 
+      position:sticky; 
+      top:0; 
+      z-index:1000; 
+    }
+
+    nav { margin-top:10px; }
+    nav a { color:white; margin:0 12px; text-decoration:none; font-weight:bold; }
+    nav a:hover { text-decoration:underline; color:#90EE90; }
+
+    .hero { 
+      background:#2e8b57 url('https://picsum.photos/1200/500?car') no-repeat center/cover; 
+      color:white; 
+      text-align:center; 
+      padding:100px 20px; 
+    }
+    .hero h2 { font-size:2.2em; margin:0; }
+
+    .section { 
+      padding:60px 20px; 
+      text-align:center; 
+      max-width:1100px; 
+      margin:auto; 
+    }
+    .section h2 { 
+      margin-bottom:20px; 
+      color:#006400; /* 标题绿色 */
+    }
+
+    footer { 
+      background:#006400; 
+      color:white; 
+      text-align:center; 
+      padding:20px; 
+    }
+
+    /* 服务区卡片布局 */
+    .services-grid {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;
+    }
+    .card {
+      background:#f5f5f5; /* 卡片灰色 */
+      padding:20px;
+      border-radius:8px;
+      flex:1 1 220px;
+      max-width:260px;
+      box-shadow:0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    /* 按钮样式 */
+    .btn {
+      display:inline-block;
+      padding:12px 20px;
+      background:#006400; /* 按钮绿色 */
+      color:white;
+      text-decoration:none;
+      border-radius:6px;
+      font-weight:bold;
+      margin-top:15px;
+    }
+    .btn:hover { background:#228B22; } /* hover 更亮的绿色 */
+
+    /* 响应式处理 */
+    @media (max-width: 768px) {
+      nav a { display:inline-block; margin:6px; }
+      .hero { padding:60px 15px; }
+      .hero h2 { font-size:1.6em; }
+      .section { padding:40px 15px; }
+      .services-grid { flex-direction:column; align-items:center; }
+      .card { max-width:90%; }
+    }
+
+    @media (max-width: 480px) {
+      nav { font-size:14px; }
+      .hero h2 { font-size:1.3em; }
+      .card { padding:15px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>T&D Auto Care</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <div id="home" class="hero">
+    <h2>Your Trusted Auto Repair Shop in Sydney</h2>
+    <p>Tyres • Maintenance • Repairs</p>
+  </div>
+
+  <!-- Services Section -->
+  <div id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="card">
+        <h3>Tyre Replacement</h3>
+        <p>High-quality tyres with installation and balancing.</p>
+      </div>
+      <div class="card">
+        <h3>Oil Change</h3>
+        <p>Regular oil and filter changes for smooth driving.</p>
+      </div>
+      <div class="card">
+        <h3>Brake Repair</h3>
+        <p>Professional brake inspection and replacement.</p>
+      </div>
+      <div class="card">
+        <h3>Battery Check</h3>
+        <p>Quick battery testing and replacement if needed.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+      T&D Auto Care has been serving Sydney drivers with honesty and professionalism.  
+      Our experienced mechanics are dedicated to providing reliable, affordable, and 
+      high-quality auto services. Whether it's routine maintenance or urgent repairs,  
+      we make sure your car is safe and road-ready.
+    </p>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>📍 T&D Auto Care</p>
+    <p>📞 0412 345 678</p>
+    <p>✉️ tdautocare@email.com</p>
+    <p>⏰ Mon–Sat: 9am–6pm</p>
+
+    <!-- 按钮：点击跳转 Google Maps 导航 -->
+    <a href="https://www.google.com/maps/dir/?api=1&destination=T%26D+Auto+Care" 
+       target="_blank" class="btn">
+      📍 Get Directions
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 T&D Auto Care. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
