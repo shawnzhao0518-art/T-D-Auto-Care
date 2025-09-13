@@ -10,12 +10,12 @@
       margin:0; 
       padding:0; 
       line-height:1.6; 
-      background:#ffffff; /* 整体背景白色 */
+      background:#ffffff; 
       color:#333;
     }
 
     header { 
-      background:#006400; /* 深绿色主色 */
+      background:#006400; 
       color:#fff; 
       padding:15px; 
       text-align:center; 
@@ -44,7 +44,7 @@
     }
     .section h2 { 
       margin-bottom:20px; 
-      color:#006400; /* 标题绿色 */
+      color:#006400; 
     }
 
     footer { 
@@ -54,7 +54,6 @@
       padding:20px; 
     }
 
-    /* 服务区卡片布局 */
     .services-grid {
       display:flex;
       flex-wrap:wrap;
@@ -62,7 +61,7 @@
       gap:20px;
     }
     .card {
-      background:#f5f5f5; /* 卡片灰色 */
+      background:#f5f5f5; 
       padding:20px;
       border-radius:8px;
       flex:1 1 220px;
@@ -70,20 +69,18 @@
       box-shadow:0 4px 6px rgba(0,0,0,0.1);
     }
 
-    /* 按钮样式 */
     .btn {
       display:inline-block;
       padding:12px 20px;
-      background:#006400; /* 按钮绿色 */
+      background:#006400; 
       color:white;
       text-decoration:none;
       border-radius:6px;
       font-weight:bold;
       margin-top:15px;
     }
-    .btn:hover { background:#228B22; } /* hover 更亮的绿色 */
+    .btn:hover { background:#228B22; }
 
-    /* 响应式处理 */
     @media (max-width: 768px) {
       nav a { display:inline-block; margin:6px; }
       .hero { padding:60px 15px; }
@@ -111,6 +108,14 @@
       <a href="#contact">Contact</a>
     </nav>
   </header>
+
+  <!-- 顶部地图按钮 -->
+  <div style="text-align:center; padding:15px; background:#f5f5f5;">
+    <a href="https://www.google.com/maps/dir/?api=1&destination=T%26D+Auto+Care" 
+       target="_blank" class="btn">
+      📍 Get Directions
+    </a>
+  </div>
 
   <!-- Home Section -->
   <div id="home" class="hero">
@@ -159,12 +164,6 @@
     <p>📞 0412 345 678</p>
     <p>✉️ tdautocare@email.com</p>
     <p>⏰ Mon–Sat: 9am–6pm</p>
-
-    <!-- 按钮：点击跳转 Google Maps 导航 -->
-    <a href="https://www.google.com/maps/dir/?api=1&destination=T%26D+Auto+Care" 
-       target="_blank" class="btn">
-      📍 Get Directions
-    </a>
   </div>
 
   <!-- Footer -->
